@@ -38,16 +38,19 @@ public class venta {
         }return Baja;
     }
     
-    public int getTotalventa(){
-        int VentaTotal=0;
-        for(int Valores=1; Valores<valor; Valores++){
-            VentaTotal += ventas[Valores];
-        }return VentaTotal;
+    public int getOperaciones(){
+        int opera=0;
+        for(int datos=1; datos<valor; datos++){
+            opera+=ventas[datos];
+        }return opera;
     }
     
-    public double getPromedioVentas(){
-        double promedios = getTotalventa();
+    public double getPromedios(){
+        double promedios = getTotal();
         return promedios / valor;
     }
     
+    public int getTotal(){
+        return getOperaciones() + getVentaMayor();
+    }
 }

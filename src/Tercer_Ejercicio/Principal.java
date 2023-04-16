@@ -20,7 +20,8 @@ public class Principal {
         }
         System.out.println("La venta mas Alta es: "+ venta[0]);
         System.out.println("La venta mas Baja es: "+ venta[3]);
-        
-        System.out.println("El Promedio de todas las ventas da un valo de: "+cantidad.getPromedioVentas());
+        System.out.println("********************");
+        System.out.println("El Total de  todas las ventas es: "+ cantidad.getTotal());
+        System.out.println("EL promedio de todas las ventas es: "+ cantidad.getPromedios());
     }
 }
