@@ -36,12 +36,5 @@ public class principal_ventas {
              System.out.println(venta.getVentas()[a]);
          }
          System.out.println("***********************************************");
-         
-         venta.ParesEimpares();
-         System.out.println("Estas son las : ");
-         for(int a=0; a<numeros; a++){
-             System.out.println(venta.getVentas()[a]);
-         }
-
     }
 }

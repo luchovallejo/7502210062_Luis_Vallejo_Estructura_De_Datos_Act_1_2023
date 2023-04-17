@@ -44,20 +44,6 @@ public class ventas {
             Ventas[k] = P;
         }
     }
-    
-    public void ParesEimpares(){
-        int[] par = new int[numeros/2];
-        int[] Impar = new int[(numeros+1)/2];
-        int contPares=0,contImpar=0;
-        int i = Ventas[0], cont = 0;
-        for(int y=0; y<numeros; y++){
-            if(i% 2==0){
-                contPares++;
-            }else{
-                contImpar++;
-            }
-        }
-    }
 
     public int[] getVentas() {
         return Ventas;
