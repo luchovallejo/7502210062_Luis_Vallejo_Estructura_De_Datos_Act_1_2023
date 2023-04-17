@@ -11,11 +11,37 @@ package Cuarto_Ejercicio;
 public class principal_ventas {
     public static void main(String[] args) {
         
-        int[] Ventas = {600, 200, 450, 90, 45};
+        int[] Ventas = {900, 200, 630, 90, 33};
         int numeros = 5;
         
         ventas venta = new ventas(Ventas, numeros);
         
-        System.out.println("a quie es: " + venta.Descendente()+ Ventas);
+        venta.Descendente();
+        System.out.println("Estas son las ventas que tienden a descender: ");
+        for(int p=0; p<numeros; p++){
+            System.out.println(venta.getVentas()[p]);
+        }
+        System.out.println("***********************************************");
+        
+        venta.Ascendente();
+        System.out.println("Estas son las ventas que tienden a ascender: ");
+        for(int v=0; v<numeros; v++){
+            System.out.println(venta.getVentas()[v]);
+        }
+        System.out.println("***********************************************");
+        
+        venta.Desordenadas();
+        System.out.println("Estas son las ventas desordenadas: ");
+         for(int a=0; a<numeros; a++){
+             System.out.println(venta.getVentas()[a]);
+         }
+         System.out.println("***********************************************");
+         
+         venta.ParesEimpares();
+         System.out.println("Estas son las : ");
+         for(int a=0; a<numeros; a++){
+             System.out.println(venta.getVentas()[a]);
+         }
+
     }
 }
