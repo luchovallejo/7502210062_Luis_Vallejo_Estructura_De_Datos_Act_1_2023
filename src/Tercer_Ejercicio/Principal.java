@@ -18,10 +18,11 @@ public class Principal {
         for(int t=0; t<venta.length; t++){
             System.out.println("Ventas "+ t + " es: "+venta[t]);
         }
-        System.out.println("La venta mas Alta es: "+ venta[0]);
-        System.out.println("La venta mas Baja es: "+ venta[3]);
+        System.out.println("El numero de ventas mas Alta fue: "+ venta[0]);
+        System.out.println("EL numero de ventas mas Baja fue: "+ venta[3]);
         System.out.println("********************");
-        System.out.println("El Total de  todas las ventas es: "+ cantidad.getTotal());
+        System.out.println("El Total de todas las ventas es: "+ cantidad.getTotal());
         System.out.println("EL promedio de todas las ventas es: "+ cantidad.getPromedios());
+        System.out.println("El promedio aproximado que se hacer a la cantidad del promedio de la venta es: "+cantidad.Aproximado());
     }
 }

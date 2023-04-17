@@ -53,4 +53,9 @@ public class venta {
     public int getTotal(){
         return getOperaciones() + getVentaMayor();
     }
+    
+    public double Aproximado(){
+        double aprox = getOperaciones();
+        return aprox / valor;
+    }
 }
