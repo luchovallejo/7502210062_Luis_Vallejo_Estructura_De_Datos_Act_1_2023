@@ -38,5 +38,9 @@ public class Punto_FyG_Ejercicio1 {
         
         System.out.println("Escribe caracteristica 5: ");
         caracteristica[4] = sc.nextLine();
+        
+        for(int u=0; u<caracteristica.length; u++){
+            System.out.println("la caracteristica "+ u + " = " +caracteristica[u]);
+        }
     }
 }
