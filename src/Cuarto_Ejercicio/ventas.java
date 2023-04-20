@@ -54,7 +54,7 @@ public class ventas {
             if(h % 2==0){
                 pare[par++]= h;
             }else{
-               pare[impar++]= h;
+               imp[impar++]= h;
             }
         }
     }
