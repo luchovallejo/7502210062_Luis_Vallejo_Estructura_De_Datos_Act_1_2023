@@ -44,6 +44,20 @@ public class ventas {
             Ventas[k] = P;
         }
     }
+    
+     public void paresImpares(){
+        Arrays.sort(Ventas); 
+        int[] pare = new int [Ventas.length];
+        int[] imp = new int [Ventas.length];
+        int  par =0, impar=0;
+        for(int h=0; h<Ventas.length; h++){
+            if(h % 2==0){
+                pare[par++]= h;
+            }else{
+               pare[impar++]= h;
+            }
+        }
+    }
 
     public int[] getVentas() {
         return Ventas;

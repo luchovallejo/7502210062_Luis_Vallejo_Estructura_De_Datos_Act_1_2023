@@ -36,5 +36,11 @@ public class principal_ventas {
              System.out.println(venta.getVentas()[a]);
          }
          System.out.println("***********************************************");
+         
+         venta.paresImpares();
+         System.out.println("estos son impares y pares");
+         for(int z=0; z<numeros; z++){
+             System.out.println(venta.getVentas()[z]);
+         }
     }
 }

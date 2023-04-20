@@ -23,6 +23,6 @@ public class Principal {
         System.out.println("********************");
         System.out.println("El Total de todas las ventas es: "+ cantidad.getTotal());
         System.out.println("EL promedio de todas las ventas es: "+ cantidad.getPromedios());
-        System.out.println("El promedio aproximado que se hacer a la cantidad del promedio de la venta es: "+cantidad.Aproximado());
+        System.out.println("El promedio aproximado que se acerca a la cantidad del promedio de la venta es: "+cantidad.Aproximado());
     }
 }
