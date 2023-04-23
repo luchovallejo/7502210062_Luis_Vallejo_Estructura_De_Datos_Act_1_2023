@@ -9,7 +9,7 @@ package Cuarto_Ejercicio;
  * @author lucho
  */
 public class principal_ventas {
-    public static void main(String[] args) {
+     public static void main(String[] args) {
         
         int[] Ventas = {900, 200, 630, 90, 33};
         int numeros = 5;

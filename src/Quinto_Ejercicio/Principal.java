@@ -4,22 +4,24 @@
  */
 package Quinto_Ejercicio;
 
+import static Quinto_Ejercicio.Quinto_Ejercicio.infoLenguajes;
+
 /**
  *
  * @author lucho
  */
 public class Principal {
     public static void main(String[] args) {
-        java.lang.Object[][] Object = new java.lang.Object[5][8];
-        int infolenguaje = 5;
+        Object[][] lenguajes = new Object[5][8];
+        lenguajes[0] = new Object[]{"NOMBRE", "AÑO", "AUTOR", "DETALLES", "FRAMEWORKS"};
         
-        Object[0] = new java.lang.Object[]{"NOMBRE", "AÑO", "AUTOR", "DETALLES", "FRAMEWORKS"};
+        infoLenguajes(lenguajes);
         
-        for(int t=0; t<Object.length; t++){
-            for(int j=0; j<Object[t].length; j++){
-                System.out.println(Object[t][j]);
-            }
-        }
-       
+        for(int k=0; k<lenguajes.length; k++){
+           for(int h=0; h<lenguajes[k].length; h++){
+               System.out.print(lenguajes[k][h] + "\t");
+           }
+            System.out.println();
+        } 
     }
 }
