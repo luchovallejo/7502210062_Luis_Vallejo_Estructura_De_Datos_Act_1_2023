@@ -47,14 +47,14 @@ public class Quinto_Ejercicio {
     
     public static String[] getDatosFila( Object[][] lenguajes, int fila) throws Exception{
         if(fila >= lenguajes.length){
-            throw new Exception("fila " +fila+ "errada");
+            throw new Exception("Esta fila permanece errada" +fila);
         }
         return (String []) lenguajes[fila];
     }
     
     public static Object[] getFilColumnas(Object[][] lenguajes, int columna)throws Exception{
         if(columna >= lenguajes.length){
-            throw new Exception("fila " +columna+ "errada");
+            throw new Exception("Este numero de columna permanece errada" +columna);
         }
         Object[] colum = new Object[lenguajes.length];
         for(int d=1; d<lenguajes.length; d++){
@@ -72,15 +72,20 @@ public class Quinto_Ejercicio {
         data[1] = lenguajes[fila];
         return data;
     }
+    // Método para obtener las coordenadas de un valor específico en una matriz
+public static String getcoordenadas(Object[][] lenguajes, String NOMBRE){
     
-    public static int[] getcoordenadas(Object[][] lenguajes, String NOMBRE){
-        for(int t=1; t<lenguajes.length; t++){
-            for(int y=0; y<lenguajes.length; y++){
-                if(lenguajes[t][y]!= null && lenguajes[t][y].equals(NOMBRE)){
-                    return new int[]{t, y};
-                }
+    // Recorrer la matriz
+    for(int t=1; t<lenguajes.length; t++){
+        for(int y=0; y<lenguajes.length; y++){
+            // Si el valor buscado coincide con el valor en la posición actual de la matriz
+            if(lenguajes[t][y]!= null && lenguajes[t][y].equals(NOMBRE)){
+                // Devolver las coordenadas de la posición actual de la matriz donde se encuentra el valor buscado
+                return t + ":" + y;
             }
         }
-        return null;
+    }
+    // Si no se encuentra el valor devuelve null
+    return "null";
     }
 }

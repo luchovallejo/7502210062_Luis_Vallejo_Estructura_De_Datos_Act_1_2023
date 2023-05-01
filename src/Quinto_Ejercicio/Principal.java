@@ -4,7 +4,9 @@
  */
 package Quinto_Ejercicio;
 
+import static Quinto_Ejercicio.Quinto_Ejercicio.getcoordenadas;
 import static Quinto_Ejercicio.Quinto_Ejercicio.infoLenguajes;
+import java.util.Scanner;
 
 /**
  *
@@ -23,5 +25,29 @@ public class Principal {
            }
             System.out.println();
         } 
+        
+        System.out.println("Ingrese un valor para buscar :" );
+        
+        // Scanner para buscar un valor
+        Scanner scar2 = new Scanner(System.in);
+        // Declarar variables
+        String nombreLenguaje = ""; // El valor que vamos a buscar
+        String respuesta = ""; // Aqui se guarda el resultado del metodo
+        // Leer la entrada del usuario y la guarda en la variables
+        nombreLenguaje = scar2.nextLine();
+        
+        // LLama a getcoordenadas para buscar nombreLenguaje 
+        respuesta = getcoordenadas(lenguajes, nombreLenguaje);
+        
+        // Imprimir el resultado en la consola
+        if ( respuesta != "null"  ) { // si el valor NO ES IGUAL a Null 
+            System.out.print("\nEl valor " + nombreLenguaje + " esta en la posicion " + respuesta );
+        } else { // DE LO CONTRARIO si el valor es IGUAL a Null
+            System.out.print("\nEl metodo regreso \"" + respuesta + "\"");
+        }
+        
+        // Esto en el archivo main
+
+        // Luego del codigo que ingresa los valores
     }
 }
